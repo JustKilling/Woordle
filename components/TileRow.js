@@ -3,6 +3,7 @@ import {Text, View} from "react-native";
 import Tile from "./Tile";
 
 function TileRow({ guess, ...props }) {
+
     return (
         <View style={props.styles.row}>
             <Tile index={0} guess={guess} styles={props.styles} word={props.word} guessed={props.guessed}></Tile>

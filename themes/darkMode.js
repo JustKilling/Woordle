@@ -9,33 +9,15 @@ const guessedColor = "#b59f3b"
 const absentColor = "#3a3a3c"
 const modalColor = "#373737"
 const darkMode = StyleSheet.create({
-    main:{
-      backgroundColor:defaultBackColor,
-        flex:1
+    main: {
+        height: "100%",
+        backgroundColor: defaultBackColor,
     },
     container: {
         flex: 1,
         backgroundColor: defaultBackColor,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    modalView: {
-        margin: "auto",
-        backgroundColor: modalColor,
-        borderRadius: 20,
-        paddingVertical: 10,
-        paddingHorizontal: 20,
-        alignItems: "center",
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 4,
-        elevation: 5,
-        maxWidth: 200,
-        pointerEvents: 'none'
     },
     title: {
         fontSize: 50,
@@ -77,7 +59,7 @@ const darkMode = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
-    tileGuessed:{
+    tileGuessed: {
         borderColor: guessedColor,
         backgroundColor: guessedColor,
         borderWidth: 2,
@@ -88,9 +70,9 @@ const darkMode = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
-    tileAbsent:{
+    tileAbsent: {
         borderColor: absentColor,
-        backgroundColor:absentColor,
+        backgroundColor: absentColor,
         borderWidth: 2,
         padding: 2,
         width: 50,
