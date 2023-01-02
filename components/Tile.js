@@ -2,7 +2,6 @@ import React from "react";
 import {Text, View} from "react-native";
 
 function Tile({styles, index, guess, word, guessed}) {
-
     let letter = guess[index] ? guess[index].toLowerCase() : "";
     const wordLetter = word[index].toLowerCase();
 

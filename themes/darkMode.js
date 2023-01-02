@@ -3,12 +3,15 @@ import {Platform, StyleSheet} from "react-native";
 
 const textColor = "#fff";
 const defaultBackColor = Platform.OS === "android" ? "#252525" : "#121212"
+const defaultBackColorAlpha = Platform.OS === "android" ? "rgba(37,37,37,0.7)" : "rgba(18,18,18,0.7)"
+
 const keyColor = "#818384"
 const correctColor = "#538d4e"
 const guessedColor = "#b59f3b"
 const absentColor = "#3a3a3c"
 const modalColor = "#373737"
 const darkMode = StyleSheet.create({
+
     main: {
         height: "100%",
         backgroundColor: defaultBackColor,
@@ -18,6 +21,45 @@ const darkMode = StyleSheet.create({
         backgroundColor: defaultBackColor,
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    modalView: {
+        display: "flex",
+        height: "100%",
+        width: "100%",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor:defaultBackColorAlpha
+    },
+    modal: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    modalFinal: {
+        backgroundColor: modalColor,
+        margin: 20,
+        padding: 50,
+        paddingVertical: 20,
+    },
+    modalText: {
+        marginBottom: 10,
+        color: textColor,
+        fontSize: 20,
+        textAlign: "center"
+    },
+    modalBold: {
+        marginBottom: 10,
+        color: textColor,
+        fontSize: 20,
+        textAlign: "center",
+        fontWeight: "bold"
+    },
+    modalWord: {
+        marginBottom: 10,
+        color: textColor,
+        fontWeight: "bold",
+        fontSize: 20 * 1.5,
+        textAlign: "center"
     },
     title: {
         fontSize: 50,
@@ -95,6 +137,27 @@ const darkMode = StyleSheet.create({
     keyLetter: {
         color: textColor,
         fontSize: 15
+    },
+    table: {
+        flex: 1,
+        flexDirection: "row",
+        alignItems: "flex-start"
+    },
+    tableColumn:{
+        margin: 10,
+        marginTop: 0
+    },
+    tableText:{
+        color: textColor,
+        fontSize: 20,
+        textAlign: "center",
+        fontWeight: "bold",
+    },
+    tableTextSmall:{
+        marginBottom: 10,
+        color: textColor,
+        fontSize: 15,
+        textAlign: "center"
     }
 })
 export default darkMode;
