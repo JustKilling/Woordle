@@ -28,7 +28,7 @@ const darkMode = StyleSheet.create({
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor:defaultBackColorAlpha
+        backgroundColor: defaultBackColorAlpha
     },
     modal: {
         display: "flex",
@@ -65,6 +65,7 @@ const darkMode = StyleSheet.create({
         fontSize: 50,
         textAlign: "center",
         color: textColor,
+        fontWeight: "bold",
         paddingTop: Platform.OS === "android" ? 50 : 0
     },
     text: {
@@ -72,6 +73,11 @@ const darkMode = StyleSheet.create({
         userSelect: "none"
     },
     tileText: {
+        color: textColor,
+        fontSize: 25,
+        fontWeight: "bold"
+    },
+    tileGuessedText: {
         color: textColor,
         fontSize: 25,
         fontWeight: "bold"
@@ -145,20 +151,20 @@ const darkMode = StyleSheet.create({
         flexWrap: "wrap",
         justifyContent: "center"
     },
-    tableColumn:{
+    tableColumn: {
         flexGrow: 1,
         margin: 10,
         marginTop: 0,
         alignItems: "center",
         justifyContent: "center"
     },
-    tableText:{
+    tableText: {
         color: textColor,
         fontSize: 20,
         textAlign: "center",
         fontWeight: "bold",
     },
-    tableTextSmall:{
+    tableTextSmall: {
         marginBottom: 10,
         color: textColor,
         fontSize: 15,

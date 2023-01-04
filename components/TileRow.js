@@ -78,11 +78,11 @@ function TileRow({guess, ...props}) {
 
     return (
         <View style={props.styles.row}>
-            <Tile coloring={coloring} index={0} guess={guess} styles={props.styles}></Tile>
-            <Tile coloring={coloring} index={1} guess={guess} styles={props.styles}></Tile>
-            <Tile coloring={coloring} index={2} guess={guess} styles={props.styles}></Tile>
-            <Tile coloring={coloring} index={3} guess={guess} styles={props.styles}></Tile>
-            <Tile coloring={coloring} index={4} guess={guess} styles={props.styles}></Tile>
+            <Tile coloring={coloring} index={0} guess={guess} styles={props.styles} guessed={props.guessed}></Tile>
+            <Tile coloring={coloring} index={1} guess={guess} styles={props.styles} guessed={props.guessed}></Tile>
+            <Tile coloring={coloring} index={2} guess={guess} styles={props.styles} guessed={props.guessed}></Tile>
+            <Tile coloring={coloring} index={3} guess={guess} styles={props.styles} guessed={props.guessed}></Tile>
+            <Tile coloring={coloring} index={4} guess={guess} styles={props.styles} guessed={props.guessed}></Tile>
         </View>
 
     )
