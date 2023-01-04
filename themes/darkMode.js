@@ -37,7 +37,7 @@ const darkMode = StyleSheet.create({
     },
     modalFinal: {
         backgroundColor: modalColor,
-        margin: 20,
+        margin: 50,
         padding: 50,
         paddingVertical: 20,
     },
@@ -141,11 +141,16 @@ const darkMode = StyleSheet.create({
     table: {
         flex: 1,
         flexDirection: "row",
-        alignItems: "flex-start"
+        alignItems: "flex-start",
+        flexWrap: "wrap",
+        justifyContent: "center"
     },
     tableColumn:{
+        flexGrow: 1,
         margin: 10,
-        marginTop: 0
+        marginTop: 0,
+        alignItems: "center",
+        justifyContent: "center"
     },
     tableText:{
         color: textColor,
