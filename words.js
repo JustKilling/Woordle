@@ -550,7 +550,6 @@ const puzzle_words = [
     "setje",
     "klimt",
     "maart",
-    "rigby",
     "beurt",
     "kever",
     "blikt",
@@ -604,6 +603,7 @@ const puzzle_words = [
     "gedoe",
     "party",
     "forel",
+    "neger",
     "abdij",
     "verse",
     "greep",
@@ -1166,6 +1166,7 @@ const puzzle_words = [
     "kluis",
     "felle",
     "orale",
+    "makak",
     "steek",
     "naden",
     "merkt",
@@ -1340,6 +1341,7 @@ const puzzle_words = [
     "sober",
     "garde",
     "airco",
-    "keten"
+    "keten",
+    "peter",
 ]
 export default puzzle_words;

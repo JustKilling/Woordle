@@ -144,6 +144,36 @@ const darkMode = StyleSheet.create({
         color: textColor,
         fontSize: 15
     },
+    keyGuessed: {
+        backgroundColor: guessedColor,
+        padding: 10,
+        margin: 3,
+        borderRadius: 5,
+    },
+    keyLetterGuessed: {
+        color: textColor,
+        fontSize: 15
+    },
+    keyCorrect: {
+        backgroundColor: correctColor,
+        padding: 10,
+        margin: 3,
+        borderRadius: 5,
+    },
+    keyLetterCorrect: {
+        color: textColor,
+        fontSize: 15
+    },
+    keyAbsent: {
+        backgroundColor: absentColor,
+        padding: 10,
+        margin: 3,
+        borderRadius: 5,
+    },
+    keyLetterAbsent: {
+        color: textColor,
+        fontSize: 15
+    },
     table: {
         flex: 1,
         flexDirection: "row",
