@@ -147,7 +147,7 @@ export default function App() {
             letter: styles.keyLetterGuessed
         }
     }
-    const [keyBoardStyling, setKeyboardStyling] = React.useState({
+    const initialKeyboardStylingState = {
         a: keyboardStyleTypes.default,
         b: keyboardStyleTypes.default,
         c: keyboardStyleTypes.default,
@@ -175,7 +175,8 @@ export default function App() {
         y: keyboardStyleTypes.default,
         z: keyboardStyleTypes.default,
         default: keyboardStyleTypes.default
-    })
+    }
+    const [keyBoardStyling, setKeyboardStyling] = React.useState(initialKeyboardStylingState)
     const [stats, setStats] = React.useState(initialStats)
     React.useEffect(() => {
         async function getStatsData() {
@@ -196,13 +197,10 @@ export default function App() {
                 stats.nextWordDate = initialStats.nextWordDate;
                 stats.wordToday = initialStats.wordToday;
                 stats.guess = initialStats.guess;
+                setStats(stats);
+                setKeyboardStyling(initialKeyboardStylingState)
             }
         })
-
-
-
-
-
     }, [])
 
     React.useEffect(() => {
@@ -312,6 +310,7 @@ export default function App() {
     const title = "Woordle";
     if (!stats) return;
     //ckeck keyboard
+    setKeyboardStyling(initialKeyboardStylingState);
     if (stats.guessIndex > 0) {
         let correctLetters = [];
         for (const [index, value] of Object.entries(stats.guess)) {
